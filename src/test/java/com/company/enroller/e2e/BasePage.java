@@ -38,6 +38,9 @@ public class BasePage {
     public void click(WebElement element) {
         this.wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
+    public void click(String element) {
+        this.wait.until(ExpectedConditions.elementToBeClickable(By.id(element))).click();
+    }
 
     public void quit() {
         if (driver != null) {

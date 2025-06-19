@@ -9,6 +9,7 @@ public class Const {
     // OBJECTS
     public final static String USER_I_NAME = "user1@gmail.com";
     public final static String USER_II_NAME = "user2@gmail.com";
+    public final static String USER_III_NAME = "user3@gmail.com";
 
 
     public final static String MEETING_I_TITLE = "Meeting A";
@@ -20,5 +21,7 @@ public class Const {
 
     // LABELS
     public final static String NEW_MEETING_BTN_LABEL = "Dodaj nowe spotkanie";
+    public final static String SIGN_TO_MEETING_BTN_LABEL = "Zapisz się";
+    public final static String REMOVE_EMPTY_MEETING_BTN_LABEL = "Usuń puste spotkanie";
 
 }

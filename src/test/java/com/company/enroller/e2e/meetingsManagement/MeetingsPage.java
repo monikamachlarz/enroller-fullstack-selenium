@@ -13,6 +13,14 @@ public class MeetingsPage extends BasePage {
     @CacheLookup
     private WebElement addNewMeetingBtn;
 
+    @FindBy(xpath = "//*[contains(text(), \"" + Const.SIGN_TO_MEETING_BTN_LABEL + "\")]")
+    @CacheLookup
+    private WebElement addMeetingParticipantBtn;
+
+    @FindBy(xpath = "//*[contains(text(), \"" + Const.REMOVE_EMPTY_MEETING_BTN_LABEL + "\")]")
+    @CacheLookup
+    private WebElement removeEmptyMeetingBtn;
+
     @FindBy(css = "form > input")
     private WebElement meetingTitleInput;
 
@@ -22,6 +30,29 @@ public class MeetingsPage extends BasePage {
     @FindBy(css = "form > button")
     private WebElement confirmMeetingBtn;
 
+    public WebElement getAddMeetingParticipantBtn() {
+        return addMeetingParticipantBtn;
+    }
+
+    public WebElement getRemoveEmptyMeetingBtn() {
+        return removeEmptyMeetingBtn;
+    }
+
+    public WebElement getAddNewMeetingBtn() {
+        return addNewMeetingBtn;
+    }
+
+    public WebElement getMeetingTitleInput() {
+        return meetingTitleInput;
+    }
+
+    public WebElement getMeetingDescInput() {
+        return meetingDescInput;
+    }
+
+    public WebElement getConfirmMeetingBtn() {
+        return confirmMeetingBtn;
+    }
 
     public MeetingsPage(WebDriver driver) {
         super(driver);
